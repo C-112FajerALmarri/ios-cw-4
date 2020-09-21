@@ -16,9 +16,24 @@ import Foundation
 /// 3. gender: String
 
 //struct ...
+struct student {
+    var name:String
+    var track:String
+    var gender:String
 
-
-
+func imageName()-> String{
+    if gender == "boy"{
+        return "boyProfileImage"
+    }
+    else if gender == "girl"
+    {
+        return "girlProfileImage"
+    }
+    else {
+        return "profileimage2-1"
+    }
+}
+}
 
 
 // MARK:  2️⃣ قم بإنشاء دالة بداخل الهيكل باسم imageName()
@@ -41,6 +56,7 @@ import Foundation
 
 
 
+
 // MARK: 3️⃣ قم بكتابة مصفوفة أسفل هذا السطر تحتوي على ثلاثة طلاب كالتالي:
 /**
  1. name: ريم خالد,  track: iOS,  gender: girl
@@ -50,13 +66,13 @@ import Foundation
 
 // كتبنالك ياها عشان لا تقول (مووعاريف أكتب مصفوففة وااااع 😭)
 // امسح الكود واكتبه بطريقتك المبدعة 😍
-//var students: [Student] =
-//    [
-//        Student(...
-//        Student(...
-//        Student(...
-//    ]
+var students : [student] =
+    [
+        student(name:"مريم", track: "ios", gender: "girl"),
+        student(name:"صالح", track: "web", gender:"boy"),
+        student(name:"محمد", track: "android", gender:"boy")
+    
 
-
+]
 
 
